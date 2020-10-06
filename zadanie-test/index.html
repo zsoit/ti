@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jakub Achtelik">
+    <meta name="copyright" content="Jakub Achtelik">
+    <meta name="description" content="Test wiedzy o lekturze">
+    <meta name="keywords" content="lalka, prus, bolesław">
+
+    <link rel="stylesheet" href="app/style.css">
+    <link rel="icon" href="img/icon-new.png">
+
+    <link rel="image_src" href="img/fb.png" />
+    <meta property="og:image" content="img/fb.png" />
+
+    <title>Test - 10 pytań</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 id="top"><a href="">Test wiedzy o powieści <cite>Bolesława Prusa pt. "Lalka"</cite></a> </h1>
+        <div class="header__sub">Lektury / Bolesław Prus / Lalka </div>
+        <hr>
+        <div class="login">
+            <form>
+                <center>
+
+                    <div class="header__sub">Zaloguj do serwisu,aby zapisać swoje postępy</div>
+                    <input type="uname" placeholder="login" required> <br>
+                    <input type="password" placeholder="hasło" required> <br>
+                    <button>Zaloguj</button> <button>Zarejestruj</button>
+
+                </center>
+
+            </form>
+        </div>
+    </header>
+    <hr>
+
+    <fieldset id="main" class="main-frame">
+        <legend class="main-frame__header">Czas: 10minut</legend>
+
+        <ol>
+            <li>
+                <p>Czy Wokulski w końcu ożenił się z Łęcką ?</p>
+
+                <div id="trueOrfalse1" class="trueOrfalse"></div>
+
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA1()"> tak</li>
+                    <li id="b" tabindex="1" onclick="trueB1();addPoint()">nie</li>
+                    <li id="a" tabindex="1" onclick="falseA1()">nie wiem</li>
+                    <li id="a" tabindex="1" onclick="falseA1()">nie jestem pewny</li>
+                </ol>
+            </li>
+            <li>
+
+                <p>Komu Wokulski sprzedał swój sklep ?</p>
+
+                <div id="trueOrfalse2" class="trueOrfalse"></div>
+
+
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA2()">Krzeszowskim</li>
+                    <li id="a" tabindex="1" onclick="falseA2()">Młodemu Szlangbaumowi</li>
+                    <li id="a" tabindex="1" onclick="falseA2()">Szumoanowi</li>
+                    <li id="b" tabindex="1" onclick="trueB2();addPoint()">Ochockiemu</li>
+                </ol>
+            </li>
+            <li>
+                <p>Jak próbował zabić się Wokulski </p>
+
+                <div id="trueOrfalse3" class="trueOrfalse"></div>
+
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA3()">Próbował się utruć</li>
+                    <li id="b" tabindex="1" onclick="trueB3();addPoint()">Położył się na torach</li>
+                    <li id="a" tabindex="1" onclick="falseA3()">wywrócił się o widły</li>
+                    <li id="a" tabindex="1" onclick="falseA3()">zobaczył Melcherta</li>
+                </ol>
+            </li>
+            <li>
+                <p>Jak ma na imię Wokulski?</p>
+
+                <div id="trueOrfalse4" class="trueOrfalse"></div>
+
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA4()">Wiesław</li>
+                    <li id="a" tabindex="1" onclick="falseA4()">Grzegorz</li>
+                    <li id="b" tabindex="1" onclick="trueB4();addPoint()">Stanisław</li>
+                    <li id="a" tabindex="1" onclick="falseA4()">Eustachy</li>
+                </ol>
+            </li>
+            <li>
+                <p>Na czym dorobił się Wokulski?</p>
+
+                <div id="trueOrfalse5" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA5()">Na kokainie</li>
+                    <li id="a" tabindex="1" onclick="falseA5()">Na używanych samochodach</li>
+                    <li id="a" tabindex="1" onclick="falseA5()">Pracował w ZUSie</li>
+                    <li id="b" tabindex="1" onclick="trueB5();addPoint()">Na aprowizacji żywności</li>
+                </ol>
+            </li>
+            <li>
+                <p>Komu Wokulski odsprzedaje kamienicę ?</p>
+                <div id="trueOrfalse6" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA6()">Melchertowi</li>
+                    <li id="a" tabindex="1" onclick="falseA6()">Pojaskowi</li>
+                    <li id="b" tabindex="1" onclick="trueB6();addPoint()">Szlangbaumanowi</li>
+                    <li id="a" tabindex="1" onclick="falseA6()">Marusiakowi</li>
+                </ol>
+            </li>
+            <li>
+                <p>Ile lat ma matka Wokulski?</p>
+                <div id="trueOrfalse7" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="b" tabindex="1" onclick="trueB7();addPoint()">46</li>
+                    <li id="a" tabindex="1" onclick="falseA7()">68</li>
+                    <li id="a" tabindex="1" onclick="falseA7()">69</li>
+                    <li id="a" tabindex="1" onclick="falseA7()">21</li>
+                </ol>
+            </li>
+            <li>
+                <p>Gdy Wokulski poznał Izabelę, był:</p>
+                <div id="trueOrfalse8" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA8()">Homoseksualistą</li>
+                    <li id="a" tabindex="1" onclick="falseA8()">Kawalerem</li>
+                    <li id="b" tabindex="1" onclick="trueB8();addPoint()">Wdowcem</li>
+                    <li id="a" tabindex="1" onclick="falseA8()">Mężem</li>
+                </ol>
+            </li>
+            <li>
+                <p>Jak wabi się pies Rzeckiego?</p>
+                <div id="trueOrfalse9" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="b" tabindex="1" onclick="trueB9();addPoint()">Ir</li>
+                    <li id="a" tabindex="1" onclick="falseA9()">Ar</li>
+                    <li id="a" tabindex="1" onclick="falseA9()">Pyziołek</li>
+                    <li id="a" tabindex="1" onclick="falseA9()">Or</li>
+                </ol>
+            </li>
+            <li>
+                <p>Z kim pojedynkuje się Wokulski?</p>
+                <div id="trueOrfalse10" class="trueOrfalse"></div>
+                <ol type="A">
+                    <li id="a" tabindex="1" onclick="falseA10()">Z Lęckim</li>
+                    <li id="a" tabindex="1" onclick="falseA10()">Z Rzeckim</li>
+                    <li id="b" tabindex="1" onclick="trueB10();addPoint()">Z baronem Krzeszowskim</li>
+                    <li id="a" tabindex="1" onclick="falseA10()">z Starskim</li>
+                </ol>
+            </li>
+        </ol>
+
+        <center><button onclick="showEgg()">Koniec testu</button>
+            <button> <a href="#top">Powrót do początku</a> </button> </center>
+
+    </fieldset>
+
+    <fieldset id="showEgg" style="display:none;">
+
+        <div class="wrapper-avatar">
+            <center> <img src="img/avatar.png" alt="ich bin da" width="200px"> <br>
+
+
+                <div>Twoja liczba punktów: <input type="button" id="inc" value="0"></input>
+                </div>
+                <div>Wartość procentowa:<input type="button" id="procent" value="0"></input>
+                </div> <br>
+
+                <div id="commit"></div> <br> <br>
+            </center>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <footer>
+            <center><b>&copy Jakub Achtelik III TI (16.09.2020)</b></center>
+            <hr> Twój adres IP:
+            <ps id="gfg"></ps>
+            <hr>
+            <center><a href="https://github.com/zsoit/timiastko/tree/master/zadanie1" target="_blank">Zobacz kod (Github)</a> <br> <img src="https://myzsoit.pl/img/logo/github.png" width="60px"></center>
+        </footer>
+    </fieldset>
+
+    <script src="app/index.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $.getJSON("https://api.ipify.org?format=json",
+            function(data) {
+
+                $("#gfg").html(data.ip);
+            })
+    </script>
+
+</body>
+
+</html>
