@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onselectstart="return false" onselect="return false" oncopy="return false" ondragstart="return false" ondrag="return false">
     <header>
         <h1 id="top"><a href="">Test wiedzy o powieści <cite>Bolesława Prusa pt. "Lalka"</cite></a> </h1>
         <div class="header__sub">Lektury / Bolesław Prus / Lalka </div>
@@ -180,14 +180,30 @@
         </div>
     </fieldset>
     <br>
-    <fieldset>
+    <fieldset id="footer">
         <footer>
-            <center><b>&copy Jakub Achtelik III TI (16.09.2020)</b></center>
+            <center><b>&copy Jakub Achtelik III TI 2020 </b></center>
             <hr> Twój adres IP:
             <ps id="gfg"></ps>
             <hr>
             <center><a href="https://github.com/zsoit/ti/tree/main/front/test" target="_blank">Zobacz kod (Github)</a> <br> <img src="https://myzsoit.pl/img/logo/github.png" width="60px"></center>
         </footer>
+
+        <h2>Zobacz również inne moje strony:</h2>
+        <div class="project">
+            <div class="item item1">
+                <a href="https://myzsoit.pl" target="_blank"><img src="https://ti.myzsoit.pl/app/img/new-myzsoit.png" width="60" /> </a>
+            </div>
+            <div class="item item2">
+                <a href="https://pi.myzsoit.pl" target="_blank"><img src=https://image.flaticon.com/icons/png/512/43/43102.png width="60"></a>pi.myzsoit.pl
+            </div>
+            <div class="item item3">
+                <a href="https://ti.myzsoit.pl" target="_blank"><img src="https://ti.myzsoit.pl/app/img/basic-logo-zsoit.png" width="60"></a>ti.myzsoit.pl</div>
+
+
+
+
+        </div>
     </fieldset>
 
     <script src="app/index.js"></script>

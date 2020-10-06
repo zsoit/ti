@@ -154,3 +154,41 @@ a:hover {
     color: gold;
     font-size: 30px;
 }
+
+#footer {
+    background-color: #69304e;
+    border: none;
+    padding: 10px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    font-size: 11px;
+    color: black;
+    z-index: 2;
+}
+
+.item:hover {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 13px solid gold;
+    color: transparent;
+    z-index: 1;
+}
+
+h2 {
+    background-color: #c72c41;
+    padding: 4px;
+}
