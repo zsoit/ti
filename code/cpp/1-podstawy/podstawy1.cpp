@@ -1,0 +1,9 @@
+#include <iostream>//biblioteka
+#include <cstdio> 
+using namespace std;//przestrzeñ nazw
+int main()//funckja g³ówna
+{//klamra g³ówna otwieraj¹ca program
+cout << "Jakub Achtelik " << "Klasa 3TI "<< "ZSOiT MIASTKO";
+getchar();//oczekuje na zbaj enter z klawiatury
+return 0;
+}
