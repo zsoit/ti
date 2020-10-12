@@ -31,6 +31,43 @@
         red {
             color: red;
         }
+
+        .menu p{
+       display: none;
+       color: green;
+       
+     }
+
+     .menu h2{
+       outline: none;
+       cursor: pointer;
+       border: 1px solid black;
+       padding: 10px;
+       background-color:  white;
+     }
+
+     .menu h2:hover {
+    background-color:red;
+       color: white
+
+     }
+
+     .menu h2:focus{
+       color: white;
+
+       background-color: green;
+
+       text-align: center
+     }
+
+     .menu h2:focus + p{
+       display: block;
+     }
+
+     h3{
+         color: red;
+     }
+
     </style>
 
 </head>
@@ -54,75 +91,170 @@
 
         <h3> <i class="fas fa-database"> </i> PODSTAWOWE POJĘCIA</h3>
 
-        <hr>
+ 
 
-        <p>
-            <b><red>1.</red>Baza danych</b> uporządkowany zbiór danych z określonej dziedziny tematycznej, zorganizowany w sposób ułatwiający do nich dostęp. <br>
+        <div class="menu">
        
+            <h2 tabindex="1">1.Baza danych</h2>
 
+            <p>Uporządkowany zbiór danych z określonej dziedziny tematycznej, zorganizowany w sposób ułatwiający do nich dostęp. </p>
+
+            <h2 tabindex="1">2.Systemy zarządznia bazą danych</h2>
+
+            <p>To program zarządzający danymi w bazie i umożliwiający ich przetwarzanie;<br> Pełni on funkcje: 
+                <br>--> Tworzenie struktur baz danych
+                <br>--> Wykonywanie operacji (create, read, update, delete)
+                <br>--> Obsługa zapytań (selekcjonowanie danych) 
+                <br>--> Generowanie raportów i zestawień
+                <br>--> Administracja bazą danych
+            
+                </p>
+            
+            <h2 tabindex="1">3.Systemy baz danych</h2>
+
+            <p>To baza danych i system zarządzania bazą danych.</p>
+
+
+            <h2 tabindex="1">4.Encja</h2>
+
+            <p>Encją jest każdy przedmiot, zjawisko, stan lub pojęcie, czyli każdy obiekt, który potrafimy odróżnić od innych obiektów (na przykład: osoba, samochód, książka, stan pogody). Reprezentuje obiekt przechowywany w bazie danych. Np. encją mogą być: Klient, Zamówienia, Książka</p>
+
+
+            <h2 tabindex="1">5.Atrybut</h2>
+
+            <p>Opisuje encję. Może on być liczbą, tekstem lub wartością logiczną. Atrybut jest cechą opisującą encję. Zestaw atrybutów, którymi opisujemy encję zależy od potrzeb baz danych. Np.. Atrybutami dla encji Klient mogą być: Id_klienta, Nazwisko, Imię, Adres, PESEL, Telefon.</p>
+
+            <h2 tabindex="1">6.Krotka</h2>
+
+            <p>Krotka (Tabela) może być zdefiniowana następująco: jeśli tabela spełnia wymogi relacji (jest relacją), a jej kolumny są atrybutami, to krotkajest wierszem (rekordem). Krotkaprzechowuje stałe wartości o różnych typach danych, których to typów nie można zmodyfikować w kolejnej krotce. Dlatego typy, np. tytuł, ISBN, dla następnych krotek jednej tabeli będą stałe, a ich zawartości będą się różnić. Odczyt krotkiwymaga podania jej indeks. </p>
+
+            <h2 tabindex="1">7.Dziedzina</h2>
+
+            <p>Dziedzina –jest zbiorem wartości, jakie może przyjąć atrybut krotki. Jeżeli kolumna tabeli (atrybut) przechowywać będzie numery kuli używanych do losowania w lotto dziedziną atrybutu będą numery od 1 do 49.</p>
      
-        </p>
-
-        <h3>ZALETY KORZYSTANIA Z BAZY DANYCH:</h3>
-
-        <p>
-            <ul>
-                <li>szybkie wyszukiwanie informacji</li>
-                <li>łatwe wykonywanie obliczeń</li>
-                <li>możliwość przechowywania dużej ilości danych na małej powierzchni </li>
-                <li>szybkie porządkowanie danych</li>
-            </ul>
-            
-        </p>
-
-            <b><red>2.</red>System zarządzania bazą danych</b> - to program zarządzający danymi w bazie i umożliwiający ich przetwarzanie;
-            <ul>
-                <li>tworzenie struktur baz danych</li>
-                <li>wykorzystywanie informacji</li>
-                <li>obsługa zapytań</li>
-                <li>generowanie raportów i zestawień</li>
-                <li>administracja bazą danych</li> 
-               
-            </ul>
-
-
-        <p>
-       
-    </p>
-
-       
-        <p>
-        
-            
-
-                <p>
-                    <b><red>3.</red>System zarządzania bazą danych</b>- to program zarządzający danymi w bazie i umożliwiający ich przetwarzanie; 
-                        <ul>
-                            <li>ENCJA(TABELA) = przedmiot, zjawisja stanu lub pojęcie, różne od siebie.</li>
-                            <li>ATRYBUT - opisuje encję liczbą, tekstem, operacją logiczną</li>
-                        </ul>
-
-
-
-                </p> <br>
-        </p>
-
 
         <hr>
+
+
+
+    
 
         <h3><i class="fas fa-database"></i>KLUCZE</h3>
         
-        <hr>
+        <hr>    
 
-        <p>
-             <b> <red>PK </red> KLUCZ GŁÓWNY</b> został wybrany, aby unikatowo identyfikować krotki tabeli. Jest dyktowany wyborem projektanta bazy danych.
-        </p>   
-        
-        <p> <b><red>FK </red> KLUCZ OBCY</b> - do połączenia dwóch tabel (A i B) za pomocą związków uzywa się klucza. Klucz pochodzący z danej tabeli B, do łączenia tabeli z tabelą A. <br></p>
+            <div class="menu">
+                <h2 tabindex="1">1. KLUCZ GŁÓWNY (PK)</h2>
+                <p>(PRIMARY KEY) To klucz, który został wybrany, aby unikatowo identyfikować krotkitabeli. Klucz główny jest podyktowany wyborem projektanta bazy danych.</p>
 
+                <h2 tabindex="1">2. KLUCZ OBCY (PK)</h2>
+                <p>(FOREIGN KEY) Do łączenia dwóch tabel (A i B) za pomocą związków używa się klucza. Klucz pochodzący z obcej tabeli B (w której jest on kluczem głównym), używany do łączenia tej tabeli z tabelą A, będzie dla tabeli A kluczem obcym.</p>
+
+                <h2 tabindex="1">3. KLUCZ KANDYDUJĄCY </h2>
+                <p>Klucz kandydujący (naklucz, klucz potencjalny) to superkluczzawierający minimalną liczbę kolumn unikatowo identyfikujących krotkirelacji. W praktyce to kolumna lub kolumny, których użycie w charakterze klucza głównego jest rozważane przez projektanta bazy danych. To właśnie twórca bazy danych decyduje, której kolumnie (kolumnom) nada funkcję klucza głównego.</p>
+
+                <h2 tabindex="1">4. KLUCZ PROSTY </h2>
+                <p>Klucz prosty –jednoelementowy (składa się z jednej kolumny)</p>
+
+                <h2 tabindex="1">5. KLUCZ ZŁOŻONY </h2>
+                <p>wieloelementowy (składa się z więcej niż jednej kolumny).</p>
+
+                <h2 tabindex="1">6. KLUCZ PODSTAWOWY</h2>
+                <p>Klucz podstawowy –w każdej tabeli musi znaleźć się pole, które dla każdego rekordu będzie przyjmowało inną, niepowtarzalną wartość. Pole takie jest potrzebne do jednoznacznego zdefiniowania rekordu. To klucz podstawowy nazywamy również kluczem głównym lub pierwotnym. Jest to minimalna kombinacja pól identyfikująca każdy rekord w tabeli w sposób jednoznaczny.</p>
+
+
+                <h2 tabindex="1">7. KLUCZ SZTUCZNY </h2>
+                <p>Klucz sztuczny –to pole zawierające unikatowy numer identyfikacyjny nadany w sposób sztuczny każdemu obiektowi umieszczonemu w tabeli. Jeżeli w tabeli zostało utworzone takie pole, staje się ono automatycznie kluczem podstawowym, ponieważ spełnia wszystkie wymagania dotyczące tego klucza.</p>
+
+
+                <h2 tabindex="1">8. SUPER KLUCZ </h2>
+                <p>Superklucz–to kolumna lub zestaw kolumn jednoznacznie identyfikujących każdą krotkę tabeli</p>
+
+
+
+                
+
+                
+            </div>
+
+      
             
 
+        <hr>
 
+        <h3> <i class="fas fa-database"></i> CECHY CHARAKTERYSTYCZNE</h3>  
+        <div class="menu"> 
+         
+           
+           <h2 tabindex="1"> 1.Trwałość danych  </h2>
+             <p>  Oznacza możliwość przechowywania danych w pamięci masowej (trwałej) komputera. Dane tymczasowe mogą być przechowywane w pamięci komputera i tracone po jego wyłączeniu. </p>
+       
+             <h2 tabindex="1"> 2.Niezależność danych </h2>
+             <p>  Pozwala osiągnąć większą elastyczność, ponieważ programy wymieniające informacje z bazą danych są niezależne od przechowywania danych na dysku i szczegółów reprezentacji danych na dysku. Niezależność dotyczy również posługiwania się danymi. Użytkownicy są zabezpieczeni przed logicznymi zmianami (program obsługujący bazę danych jest zabezpieczony przed modyfikacją struktury tabel bazy danych). DBMS(SZBD) (Database Managment System) – gwarantujący niezależność fizyczną – przyjmuje na siebie zadanie określenia, w jakim formacie i jak dane będą przechowywanenadysku. </p>  
+       
+       
+            <h2 tabindex="1">3.Ochrona danych</h2> 
+       
+            <p>
+               Baza danych oferuje mechanizmy kontroli dostępu do danych w sposób umożliwiający użytkowanie danych wyłącznie przez uprawnionych do tego użytkowników. 
+            </p>
+       
+            <h2 tabindex="1">4.Integralność danych</h2>
+       
+            <p>
+               Zgodność z rzeczywistością. Dane w bazie danych są odwzorowaniem rzeczywistości. Jeśli modelowany fragment rzeczywistościulegnie zmianie, baza danychrównieżmusi się zmienić. 
+
+            </p>
+       
+       
+         
+        
+        </div>
+       
+        <hr>
+
+        
+
+       
+       
+         <h3> <i class="fas fa-database"></i> WŁAŚCIWOŚCI BAZ DANYCH</h3> 
+        <div class="menu">
+          <h2 tabindex="1">1.Tworzenie struktur baz danych</h2>
+          <p>
+             Aby utworzyćstrukturę bazy danych, należy posłużyćsię wcześniejsporządzonym projektem.Struktura to szkielet bazy danych, przeniesienie koncepcji tabel, powiązań na obszar systemu zarządzania bazą danych. Strukturę bazy danych możemy utworzyć po podłączeniu do serwera bazy danych. Na strukturę składają się: tabele, widoki, powiązania między tabelami, funkcje – czyli wszystko to, co stanowilogicznąorganizacjędanych.
+          </p>
+       
+          <h2 tabindex="1"> 2.Wykonywanie operacji CRUD </h2>
+       
+          <p>Może zajść potrzeba modyfikowania tabel, widoków oraz aktualizacji danych przechowywanych w tabelach. Baza danych powinna być tak zaprojektowana, aby wykonywanie aktualizacji na danych, usuwanie danych czy wprowadzanie nowych informacji do bazy danych nie spowodowało utraty spójności. Spójność bazy danych to poprawność umieszczonych w niej informacji.</p>
+       
+          <h2 tabindex="1">3.Obsługa zapytań - selekjonowanie danych </h2>
+          <p>Baza danych powinna mieć mechanizmy umożliwiające uzyskanie szybkiego dostępu do danych i ich selekcjonowanie. W relacyjnych bazach danych do uzyskiwania dostępu do danych służą zapytania. Zapytania to instrukcje napisane przeważnie w języku SQL</p>
+       
+          <h2 tabindex="1">4.Generowanie raportów i zestawień</h2>
+          <p>Oprócz uzyskania dostępudo informacji idanych, ichsortowania, selekcjonowania i przeszukiwaniabaza danych powinna oferować mechanizmy umożliwiające drukowanie wykazów czy zapisywanie ich poza bazą danych. Funkcje takie spełniają raporty i zestawienia, które mogą być generowane z baz danych.</p>
+       
+          <h2 tabindex="1">5.Administracja bazą danych</h2>
+          <p>Baza danych powinnaumożliwiać administrację swoimi zasobami.Administracja może mieć charakter nie tylko projektowania i implementowania, lecz także optymalizacji i dostosowywania do potrzeb użytkowników</p>
+       
+          
+       
+       
+       
+       
+        </div>
+
+        <hr>
+
+
+        <h3> <i class="fas fa-database"></i> ZALETY KORZYSTANIA Z BAZY DANYCH</h3> 
+          <ul>
+              <li>Szybkie wyszukiwanie informacji </li>
+              <li>Łatwe wykonywanie obliczeń</li>
+              <li>Możliwość przechowywania dużej ilości danych na małej powierzchni</li>
+              <li>Szybkie porządkowanie danych</li>
+          </ul>
+       
 
 
        
