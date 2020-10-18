@@ -17,6 +17,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../font-mfizz.css">
 
     <style>
@@ -34,7 +35,11 @@
 
         .menu p{
        display: none;
-       color: green;
+       color: white;
+       background-color:  gray;
+       padding: 30px;
+       margin-top: 10px;
+       margin-bottom: 30px;
        
      }
 
@@ -58,6 +63,13 @@
        background-color: green;
 
        text-align: center
+     }
+
+     .menu h2:focus::before{
+        font-family: FontAwesome;
+        content: "\f1c0 ";
+        padding-right: 5px;
+        color: gold;
      }
 
      .menu h2:focus + p{
@@ -130,7 +142,7 @@
 
             <h2 tabindex="1">7.Dziedzina</h2>
 
-            <p>Dziedzina –jest zbiorem wartości, jakie może przyjąć atrybut krotki. Jeżeli kolumna tabeli (atrybut) przechowywać będzie numery kuli używanych do losowania w lotto dziedziną atrybutu będą numery od 1 do 49.</p>
+            <p>Dziedzina jest zbiorem wartości, jakie może przyjąć atrybut krotki. Jeżeli kolumna tabeli (atrybut) przechowywać będzie numery kuli używanych do losowania w lotto dziedziną atrybutu będą numery od 1 do 49.</p>
      
 
         <hr>
@@ -147,34 +159,29 @@
                 <h2 tabindex="1">1. KLUCZ GŁÓWNY (PK)</h2>
                 <p>(PRIMARY KEY) To klucz, który został wybrany, aby unikatowo identyfikować krotkitabeli. Klucz główny jest podyktowany wyborem projektanta bazy danych.</p>
 
-                <h2 tabindex="1">2. KLUCZ OBCY (PK)</h2>
+                <h2 tabindex="1">2. KLUCZ OBCY (FK)</h2>
                 <p>(FOREIGN KEY) Do łączenia dwóch tabel (A i B) za pomocą związków używa się klucza. Klucz pochodzący z obcej tabeli B (w której jest on kluczem głównym), używany do łączenia tej tabeli z tabelą A, będzie dla tabeli A kluczem obcym.</p>
 
                 <h2 tabindex="1">3. KLUCZ KANDYDUJĄCY </h2>
                 <p>Klucz kandydujący (naklucz, klucz potencjalny) to superkluczzawierający minimalną liczbę kolumn unikatowo identyfikujących krotkirelacji. W praktyce to kolumna lub kolumny, których użycie w charakterze klucza głównego jest rozważane przez projektanta bazy danych. To właśnie twórca bazy danych decyduje, której kolumnie (kolumnom) nada funkcję klucza głównego.</p>
 
                 <h2 tabindex="1">4. KLUCZ PROSTY </h2>
-                <p>Klucz prosty –jednoelementowy (składa się z jednej kolumny)</p>
+                <p>Klucz prosty – jednoelementowy (składa się z jednej kolumny)</p>
 
                 <h2 tabindex="1">5. KLUCZ ZŁOŻONY </h2>
-                <p>wieloelementowy (składa się z więcej niż jednej kolumny).</p>
+                <p>Klucz złożony, wieloelementowy (składa się z więcej niż jednej kolumny).</p>
 
                 <h2 tabindex="1">6. KLUCZ PODSTAWOWY</h2>
-                <p>Klucz podstawowy –w każdej tabeli musi znaleźć się pole, które dla każdego rekordu będzie przyjmowało inną, niepowtarzalną wartość. Pole takie jest potrzebne do jednoznacznego zdefiniowania rekordu. To klucz podstawowy nazywamy również kluczem głównym lub pierwotnym. Jest to minimalna kombinacja pól identyfikująca każdy rekord w tabeli w sposób jednoznaczny.</p>
+                <p>Klucz podstawowy – w każdej tabeli musi znaleźć się pole, które dla każdego rekordu będzie przyjmowało inną, niepowtarzalną wartość. Pole takie jest potrzebne do jednoznacznego zdefiniowania rekordu. To klucz podstawowy nazywamy również kluczem głównym lub pierwotnym. Jest to minimalna kombinacja pól identyfikująca każdy rekord w tabeli w sposób jednoznaczny.</p>
 
 
                 <h2 tabindex="1">7. KLUCZ SZTUCZNY </h2>
-                <p>Klucz sztuczny –to pole zawierające unikatowy numer identyfikacyjny nadany w sposób sztuczny każdemu obiektowi umieszczonemu w tabeli. Jeżeli w tabeli zostało utworzone takie pole, staje się ono automatycznie kluczem podstawowym, ponieważ spełnia wszystkie wymagania dotyczące tego klucza.</p>
+                <p>Klucz sztuczny – to pole zawierające unikatowy numer identyfikacyjny nadany w sposób sztuczny każdemu obiektowi umieszczonemu w tabeli. Jeżeli w tabeli zostało utworzone takie pole, staje się ono automatycznie kluczem podstawowym, ponieważ spełnia wszystkie wymagania dotyczące tego klucza.</p>
 
 
                 <h2 tabindex="1">8. SUPER KLUCZ </h2>
-                <p>Superklucz–to kolumna lub zestaw kolumn jednoznacznie identyfikujących każdą krotkę tabeli</p>
-
-
-
-                
-
-                
+                <p>Superklucz – to kolumna lub zestaw kolumn jednoznacznie identyfikujących każdą krotkę tabeli</p>
+ 
             </div>
 
       
@@ -202,7 +209,7 @@
             <h2 tabindex="1">4.Integralność danych</h2>
        
             <p>
-               Zgodność z rzeczywistością. Dane w bazie danych są odwzorowaniem rzeczywistości. Jeśli modelowany fragment rzeczywistościulegnie zmianie, baza danychrównieżmusi się zmienić. 
+               Zgodność z rzeczywistością. Dane w bazie danych są odwzorowaniem rzeczywistości. Jeśli modelowany fragment rzeczywistości ulegnie zmianie, baza danych również musi się zmienić. 
 
             </p>
        
@@ -221,25 +228,22 @@
         <div class="menu">
           <h2 tabindex="1">1.Tworzenie struktur baz danych</h2>
           <p>
-             Aby utworzyć strukturę bazy danych, należy posłużyćsię wcześniejsporządzonym projektem.Struktura to szkielet bazy danych, przeniesienie koncepcji tabel, powiązań na obszar systemu zarządzania bazą danych. Strukturę bazy danych możemy utworzyć po podłączeniu do serwera bazy danych. Na strukturę składają się: tabele, widoki, powiązania między tabelami, funkcje – czyli wszystko to, co stanowi logiczną organizację danych.
+             Aby utworzyć strukturę bazy danych, należy posłużyćsię wcześniejsporządzonym projektem. Struktura to szkielet bazy danych, przeniesienie koncepcji tabel, powiązań na obszar systemu zarządzania bazą danych. Strukturę bazy danych możemy utworzyć po podłączeniu do serwera bazy danych. Na strukturę składają się: tabele, widoki, powiązania między tabelami, funkcje – czyli wszystko to, co stanowi logiczną organizację danych.
           </p>
        
           <h2 tabindex="1"> 2.Wykonywanie operacji CRUD </h2>
        
           <p>Może zajść potrzeba modyfikowania tabel, widoków oraz aktualizacji danych przechowywanych w tabelach. Baza danych powinna być tak zaprojektowana, aby wykonywanie aktualizacji na danych, usuwanie danych czy wprowadzanie nowych informacji do bazy danych nie spowodowało utraty spójności. Spójność bazy danych to poprawność umieszczonych w niej informacji.</p>
        
-          <h2 tabindex="1">3.Obsługa zapytań - selekjonowanie danych </h2>
+          <h2 tabindex="1">3.Obsługa zapytań - selekcjonowanie danych </h2>
           <p>Baza danych powinna mieć mechanizmy umożliwiające uzyskanie szybkiego dostępu do danych i ich selekcjonowanie. W relacyjnych bazach danych do uzyskiwania dostępu do danych służą zapytania. Zapytania to instrukcje napisane przeważnie w języku SQL</p>
        
           <h2 tabindex="1">4.Generowanie raportów i zestawień</h2>
           <p>Oprócz uzyskania dostępudo informacji idanych, ichsortowania, selekcjonowania i przeszukiwaniabaza danych powinna oferować mechanizmy umożliwiające drukowanie wykazów czy zapisywanie ich poza bazą danych. Funkcje takie spełniają raporty i zestawienia, które mogą być generowane z baz danych.</p>
        
           <h2 tabindex="1">5.Administracja bazą danych</h2>
-          <p>Baza danych powinnaumożliwiać administrację swoimi zasobami.Administracja może mieć charakter nie tylko projektowania i implementowania, lecz także optymalizacji i dostosowywania do potrzeb użytkowników</p>
-       
-          
-       
-       
+          <p>Baza danych powinna umożliwiać administrację swoimi zasobami. Administracja może mieć charakter nie tylko projektowania i implementowania, lecz także optymalizacji i dostosowywania do potrzeb użytkowników</p>
+
        
        
         </div>
