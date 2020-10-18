@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mySQL</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" href="../app/img/basic-logo-zsoit.png">
+
+    <link rel="image_src" href="../app/img/new-myzsoit.png" />
+    <meta property="og:image" content="../app/img/new-myzsoit.png" />
+
+    <meta name="description" content="2020/2021">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../font-mfizz.css">
+
+    <style>
+        body {
+            background-image: url(../app/img/white-background-logo-zsoit.png);
+        }
+        
+        b {
+            color: green;
+        }
+        
+        red {
+            color: red;
+        }
+
+        .menu p{
+       display: none;
+       color: white;
+       background-color:  gray;
+       padding: 30px;
+       margin-top: 10px;
+       margin-bottom: 30px;
+       
+     }
+
+     .menu h2{
+       outline: none;
+       cursor: pointer;
+       border: 1px solid black;
+       padding: 10px;
+       background-color:  white;
+     }
+
+     .menu h2:hover {
+    background-color:red;
+       color: white
+
+     }
+
+     .menu h2:focus{
+       color: white;
+
+       background-color: green;
+
+       text-align: center
+     }
+
+     .menu h2:focus::before{
+        font-family: FontAwesome;
+        content: "\f1ab ";
+        padding-right: 5px;
+        color: gold;
+     }
+
+     .menu h2:focus + p{
+       display: block;
+     }
+
+     h3{
+         color: red;
+     }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <fieldset>
+
+        <legend class="logo">
+            <h1> <img src="../app/img/basic-logo-zsoit.png" style="float: left; padding: 4px; " width="30px "> <span style="color: #E2AD38; "> ti</span>.myzsoit.pl <span style="font-family: 'Caveat', cursive; font-weight: lighter; color:#ffa3a3 ; ">2020</span></h1>
+        </legend>
+
+
+        <p>
+            <a href="../"> <i class="fas fa-home"></i> Strona Główna </a> > mySQL </p>
+        <h2><i class="icon-mysql-alt"></i> mySQL </h2>
+        <hr>
+
+
+        <h3> <i class="icon-mysql-alt"> </i>JĘZYKI</h3>
+
+ 
+
+        <div class="menu">
+       
+            <h2 tabindex="1">1.DDL (Data Definition Language)</h2>
+
+            <p>Tworzenie schematu danych; definiuje strukturę danych; <br> <br>
+                + CREATE (tworzy obiekt)<br>
+                + ALTER (modyfikuje tabele)<br>
+                + DROP (usuwa obiekty) <br>
+                + TRUNCATE (usuwa wszystkie dane)<br>
+            </p>
+
+            <h2 tabindex="1">2.DML (Data Manipulation Language)</h2>
+
+            <p>
+                Manipuluje danymi; usuwa, wprowadza  i modyfikuje dane w bazie; <br> <br>
+                > INSERT (dodaje wiersz do tabeli) <br>
+                > UPDATE (aktualizuje wiersze w tabeli) <br>
+                > DELETE (usuwa wiersze z tabeli)<br>  
+
+            </p>
+            
+            <h2 tabindex="1">3.DQL (Data Query Language)</h2>
+
+            <p>
+                Język zapytań; określa warunki; <br><br>
+                > SELECT
+            </p>
+
+
+            <h2 tabindex="1">4.DCL (Data Control Language)</h2>
+
+            <p>
+                Ma zastosowanie do nadawania uprawnień do obiektów bazodanowych.<br><br>
+               > REVOKE (nadaje uprawnienia) <br>
+               > GRANT (usuwa uprawnienia) <br>
+            </p>
+
+            <h2 tabindex="1">5.TCL (Transaction Control Language)</h2>
+
+            <p>Sterowanie przepływem danych; <br><br>
+            > BEGIN (rozpoczyna transakcję) <br>
+            > COMMIT (zatwierdza transakcję) <br>
+            > ROLLBACK (wycofuje transakcję) <br>
+            > SAVEPOINT (zapisuje punkt przywracania ostaniej aktualnej transakcji) <br>
+
+            </p>
+
+
+        <hr>
+
+
+
+    
+
+        <h3><i class="icon-mysql-alt"></i>POLECENIA</h3>
+        
+        <hr>    
+
+            <div class="menu">
+                <h2 tabindex="1">1. LOGOWANIE</h2>
+                <p>
+                    > net start mysql 80 <br>
+                    > mysql -u root -pqwert <br>
+                    > net stop mysql80 <br>
+                </p>
+
+                <h2 tabindex="1">2. PODSTAWOWE</h2>
+                <p>
+                    > show databases; <br>
+                    > use nazwa_bazy; <br>
+                    > show tables; <br>
+                    > describe nazwa_tabeli; //wyświetla atrybuty w tabeli <br>
+                </p>
+
+                <h2 tabindex="1">3. SELEKCJONOWANIE</h2>
+                <p>
+                   WZÓR: SELECT atrybuty FROM tabela WHERE cena=100 <br>
+
+                    
+                    <br><br><span style="color: gold">ŁĄCZNIKI </span><br>
+                    • and <br> 
+                        <span style="color: transparent">xd</span>WHERE cena>100 and cena;<200 <br>
+                    • or <br>
+                        <span style="color: transparent">xd</span>WHERE cena>100 or cena;<200 <br>  
+                    • in <br>
+                        <span style="color: transparent">xd</span>WHERE picie in("kawa", "herbata");<br>
+                    • not in <br>
+                        <span style="color: transparent">xd</span>WHERE picie not in("kawa", "herbata");<br>
+                    • is  <br>
+                        <span style="color: transparent">xd</span>WHERE herbata is true; <br>
+                    • between <br>
+                        <span style="color: transparent">xd</span>WHERE cena between 100 and 200; <br>
+
+
+                    <br><br><span style="color: gold">OPERATORY</span><br>
+                    • >=  większe  lub równy <br>
+                    • <=  mnijeszy lub równy <br>
+                    • =   równy <br>
+                    • <>, !=   rózny <br>
+
+
+
+
+                    <br><br><span style="color: gold">SORTOWANIE</span> <br>
+                    • ORDER BY <br>
+                    <span style="color: transparent">xd</span>SELECT * FROM Obywatele ORDER BY Kraje ASC <br>
+                    (ASC - rosnąco) <br>
+                    (DESC - malejąco) <br>
+
+
+                    <br><br><span style="color: gold">ZMIANA NAZWY KOLUMNY</span> <br>
+                    • AS <br>
+                    <span style="color: transparent">xd</span>SELECT nazwisko AS nazwiskoPracownika FROM etaty <br>
+                    
+
+
+
+
+
+
+                   
+
+
+                </p>
+
+                <h2 tabindex="1">4. ZŁĄCZENIE </h2>
+                <p>
+                    WZÓR:  SELECT nazwa_atrybutu FROM tabela1 JOIN tabela2 ON pk=fk 
+                    
+                    <br><br><span style="color: gold">1.PRZYKŁAD</span> <br>
+                    SELECT imie, nazwisko, wiek AS liczbaLat <br>
+                    FROM pracownicy <br>
+                    JOIN <br>
+                    <span style="color: transparent">xd</span>etaty ON pracownicy.nazwaEtatu=etaty.nazwaEtatu <br>
+                    JOIN <br>
+                    <span style="color: transparent">xd</span>zespoly ON pracownicy.idzespolu=zespoly.idzespolu <br>
+                    WHERE <br>
+                    <span style="color: transparent">xd</span> placa_pod>500 and placa_dod>0; <br>
+
+
+                </p>
+
+
+       
+
+
+       
+
+       <br> <hr>
+
+        <center>
+            <footer>
+                <div class="icon">
+                    <i id="cpp-icon" class="icon-cplusplus"> </i>
+                    <i id="js-icon" class="icon-javascript"> </i>
+                    <i id="php-icon" class="icon-php"></i>
+                    <i id="html-icon" class="icon-html5-alt"></i>
+                    <i id="css-icon" class="icon-css3-alt"></i>
+                </div>
+
+                <hr>
+
+                <p>&copy 2020 myZSOiT by Jakub Achtelik </p>
+
+                <img src="../app/img/new-myzsoit.png " width="100px ">
+            </footer>
+        </center>
+
+
+    </fieldset>
+
+
+</body>
+
+</html>
