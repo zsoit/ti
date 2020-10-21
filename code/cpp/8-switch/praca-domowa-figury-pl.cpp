@@ -2,51 +2,57 @@
 
 #include <iostream>
 #include <cstdio>
+#include <locale.h>
+#include <windows.h>
+
 using namespace std;
 
-
-
 int main() {
-  /*znaki-utf8-pl
+	
+   setlocale(LC_CTYPE, "Polish");
+   SetConsoleTitleA("FIGURY GEMETRYCZNE - KALKULATOR");
+	
+  /* //znaki-utf8-pl-wersja-dla-innych-komplilatorow//
   int utf8_to_unicode(string utf8_code);
-  string unicode_to_utf8(int unicode);*/
-
+  string unicode_to_utf8(int unicode);
+  */ 
+  
   cout<<"===================================== \n";
   cout<<"=  FIGURY GEMETRYCZNE - KALKULATOR  =  \n";
   cout<<"=====================================  \n";
-  //MENU DO WYBORU FIGURY
+  //MENU DO wybórU FIGURY
   cout<<"I.Wybierz numer figury:  \n";
-  cout<<"1) Prostokat \n";
+  cout<<"1) Prostok¹t \n";
   cout<<"2) Trapez \n";
-  cout<<"3) Trojkat \n ";
-  cout<<"> Twoj wybor: ";
+  cout<<"3) Trójkat \n ";
+  cout<<"> Twój wybór: ";
   int figura; cin>>figura; 
   cout<<"====================================="<<endl;
 
   //SWITCH-CASE-MAIN ==================
   switch(figura){
 
-    //1)PROSTOKAT 
+    //1)Prostok¹t 
     case 1 :{
 
-      //prostokat__numer-operacji
+      //Prostok¹t__numer-operacji
       cout<<"II.Wybierz numer operacji: \n ";
-      cout<<"1) Pole  2) Obwod \n > Twoj wybor: ";
+      cout<<"1) Pole  2) Obwód \n > Twój wybór: ";
       int prostokat; cin >> prostokat;
         float a,b;
         if(prostokat==1 || prostokat==2){
                   
-            //prostokata__dane      
+            //Prostok¹ta__dane      
             cout<<" Podaj a: "; cin>>a;
             cout<<" Podaj b: ";  cin>>b;
         }
         
-      //prostokat__switch-case
+      //Prostok¹t__switch-case
       switch(prostokat){
 
         case 1 :{
           if(a==0 || b==0){
-            cout<<" >> Blad! Podane dlugosci bokow nie moga byc rowne ZERU!";
+            cout<<" >> B³¹d! Podane d³ugoœci boków nie mog¹ byæ równe ZERU!";
           }
           else{
             cout<<" >> Pole wynosi: "<<a*b<<endl;
@@ -58,11 +64,11 @@ int main() {
 
         case 2 :{
           if(a==0 || b==0){
-            cout<<" >> Blad! Podane dlugosci bokow nie moga byc rowne ZERU!";
+            cout<<" >> B³¹d! Podane d³ugoœci boków nie mog¹ byæ równe ZERU!";
           }
 
           else{
-            cout<<" >> Obwod wynosi: "<<2*a+2*b<<endl;
+            cout<<" >> Obwód wynosi: "<<2*a+2*b<<endl;
             cout<<" >> Ze wzoru: "<<"Ob=2a+2b="<<"2*"<<a<<"+"<<"2*"<<b<<"="<<2*a+2*b;
           }
           
@@ -75,18 +81,18 @@ int main() {
         }
 
       }
-      //end-of-prostokat__switch-case
+      //end-of-Prostok¹t__switch-case
 
       break;
     }
-    //END-OF-PROSTOKAT
+    //END-OF-Prostok¹t
 
     //2)TRAPEZ
     case 2 :{
 
       //trapez__numer-operacji
       cout<<"II.Wybierz numer operacji: \n";
-      cout<<"1) Pole  2) Obwod \n > Twoj wybor: ";
+      cout<<"1) Pole  2) Obwód \n > Twój wybór: ";
       int trapez; cin>>trapez;
 
       //trapez__dane
@@ -99,7 +105,7 @@ int main() {
       }
 
       if(trapez==2){  
-         //trapez__dane__obwodu
+         //trapez__dane__Obwódu
          cout<<" Podaj a: "; cin>>a;
          cout<<" Podaj b: "; cin>>b;
          cout<<" Podaj c: "; cin>>c;
@@ -111,7 +117,7 @@ int main() {
         case 1 :{
 
           if(a==0 || b==0){
-            cout<<" >> Blad! Podane wymiary trapezu nie moga byc rowne ZERU!";
+            cout<<" >> B³¹d! Podane wymiary trapezu nie mog¹ byæ równe ZERU!";
           }
           else{
             cout<<" >> Pole wynosi: "<<((a+b)*h)/2<<endl;
@@ -123,10 +129,10 @@ int main() {
 
         case 2 :{
           if(a==0 || b==0){
-            cout<<" >> Blad! Podane wymiary trapezu nie moga byc rowne ZERU!";
+            cout<<" >> B³¹d! Podane wymiary trapezu nie mog¹ byæ równe ZERU!";
           }
           else{
-             cout<<" >> Obwod wynosi: "<<a+b+c+d<<endl;
+             cout<<" >> Obwód wynosi: "<<a+b+c+d<<endl;
               cout<<" >> Ze wzoru: "<<"Ob=a+b+c+d="<<a<<"+"<<b<<"+"<<c<<"+"<<d<<"="<<a+b+c+d;
           }
          
@@ -144,35 +150,35 @@ int main() {
     }
     //END-OF-TRAPEZ    
 
-    //3)TROJKAT
+    //3)trójkat
     case 3:{
 
-     //trojkat__numer-operacji
+     //trójkat__numer-operacji
       cout<<"II.Wybierz numer operacji: \n";
-      cout<<"1) Pole  2) Obwod \n > Twoj wybor: ";
+      cout<<"1) Pole  2) Obwód \n > Twój wybór: ";
       int trojkat; cin>>trojkat;
 
-      //trojkat__dane
+      //trójkat__dane
       float  a,b,c,h;
 
       if(trojkat==1){
-          //trojkat__dane__pole
+          //trójkat__dane__pole
           cout<<" Podaj a:  "; cin>>a;
           cout<<" Podaj h:  "; cin>>h;
       }
 
       if(trojkat==2){
-          //trojkat__dane__obwod
+          //trójkat__dane__Obwód
           cout<<" Podaj a:  "; cin>>a;
           cout<<" Podaj b:  "; cin>>b;
           cout<<" Podaj c:  "; cin>>c; 
       }
   
-      //trojkat__switch-case
+      //trójkat__switch-case
       switch(trojkat){
           case 1:{
             if(a==0  || h==0){
-              cout<<" >> Blad! Podane wymiary trojkata nie moga byc rowne ZERU!";
+              cout<<" >> B³¹d! Podane wymiary trójkata nie mog¹ byæ równe ZERU!";
             }
             else{
               cout<<" >> Pole wynosi: "<<(a*h)/2<<endl;
@@ -183,10 +189,10 @@ int main() {
 
           case 2:{
             if(a==0 || b==0 || c==0){
-              cout<<" >> Blad! Podane wymiary trojkata nie moga byc rowne ZERU!";
+              cout<<" >> B³¹d! Podane wymiary trójkata nie mog¹ byæ równe ZERU!";
             }
             else{
-              cout<<" >> Obwod wynosi: "<<a+b+c<<endl;
+              cout<<" >> Obwód wynosi: "<<a+b+c<<endl;
               cout<<" >> Ze wzoru: "<<"Ob=a+b+c="<<a<<"+"<<b<<"+"<<c<<"="<<a+b+c;
             }
             break;
@@ -197,11 +203,11 @@ int main() {
             break;
           }
       }
-      //end-of-trojkat__switch-case
+      //end-of-trójkat__switch-case
 
       break;
     }
-    //END-OF-TROJKAT
+    //END-OF-trójkat
 
     /*#MAIN*/ default :{
       cout<<" >> Nie ma takiej figury!";
@@ -217,5 +223,7 @@ int main() {
 cin.ignore();
 return 0;
 
+
 }
 //END-OF-MAIN
+
