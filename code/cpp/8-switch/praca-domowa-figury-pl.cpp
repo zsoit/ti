@@ -1,16 +1,14 @@
-//JAKUB ACHTELIK 3 TI 2020
+//JAKUB ACHTELIK 3 TI 2020 ver.WindowsCMD
 
 #include <iostream>
 #include <cstdio>
 #include <locale.h>
 #include <windows.h>
-
 using namespace std;
-
 int main() {
 	
    setlocale(LC_CTYPE, "Polish");
-   SetConsoleTitleA("FIGURY GEMETRYCZNE - KALKULATOR");
+   SetConsoleTitleA(" FIGURY GEOMETRYCZNE - KALKULATOR - JAKUB ACHTELIK III TI");
 	
   /* //znaki-utf8-pl-wersja-dla-innych-komplilatorow//
   int utf8_to_unicode(string utf8_code);
@@ -18,9 +16,9 @@ int main() {
   */ 
   
   cout<<"===================================== \n";
-  cout<<"=  FIGURY GEMETRYCZNE - KALKULATOR  =  \n";
+  cout<<"=  FIGURY GEOMETRYCZNE - KALKULATOR =  \n";
   cout<<"=====================================  \n";
-  //MENU DO wybórU FIGURY
+  //MENU DO WYBORU FIGURY
   cout<<"I.Wybierz numer figury:  \n";
   cout<<"1) Prostok¹t \n";
   cout<<"2) Trapez \n";
@@ -220,8 +218,9 @@ int main() {
   cout<<"====================================="<<endl;
 
 
-cin.ignore();
+
 return 0;
+getchar();
 
 
 }

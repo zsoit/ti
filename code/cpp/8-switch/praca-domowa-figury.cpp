@@ -3,16 +3,13 @@
 #include <iostream>
 #include <cstdio>
 using namespace std;
-
-
-
 int main() {
   /*znaki-utf8-pl
   int utf8_to_unicode(string utf8_code);
   string unicode_to_utf8(int unicode);*/
 
   cout<<"===================================== \n";
-  cout<<"=  FIGURY GEMETRYCZNE - KALKULATOR  =  \n";
+  cout<<"=  FIGURY GEOMETRYCZNE - KALKULATOR =  \n";
   cout<<"=====================================  \n";
   //MENU DO WYBORU FIGURY
   cout<<"I.Wybierz numer figury:  \n";
@@ -214,7 +211,7 @@ int main() {
   cout<<"====================================="<<endl;
 
 
-cin.ignore();
+getchar();
 return 0;
 
 }
