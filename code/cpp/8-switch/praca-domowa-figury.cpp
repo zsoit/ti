@@ -17,13 +17,13 @@ int main() {
   cout<<"2) Trapez \n";
   cout<<"3) Trojkat \n ";
   cout<<"> Twoj wybor: ";
-  int figura; cin>>figura; 
+  int figura; cin>>figura;
   cout<<"====================================="<<endl;
 
   //SWITCH-CASE-MAIN ==================
   switch(figura){
 
-    //1)PROSTOKAT 
+    //1)PROSTOKAT
     case 1 :{
 
       //prostokat__numer-operacji
@@ -32,12 +32,12 @@ int main() {
       int prostokat; cin >> prostokat;
         float a,b;
         if(prostokat==1 || prostokat==2){
-                  
-            //prostokata__dane      
+
+            //prostokata__dane
             cout<<" Podaj a: "; cin>>a;
             cout<<" Podaj b: ";  cin>>b;
         }
-        
+
       //prostokat__switch-case
       switch(prostokat){
 
@@ -62,7 +62,6 @@ int main() {
             cout<<" >> Obwod wynosi: "<<2*a+2*b<<endl;
             cout<<" >> Ze wzoru: "<<"Ob=2a+2b="<<"2*"<<a<<"+"<<"2*"<<b<<"="<<2*a+2*b;
           }
-          
           break;
         }
 
@@ -87,7 +86,7 @@ int main() {
       int trapez; cin>>trapez;
 
       //trapez__dane
-      float a, b, c, d, h; 
+      float a, b, c, d, h;
       if(trapez==1){
           //trapez__dane__pola
           cout<<" Podaj a: "; cin>>a;
@@ -95,13 +94,13 @@ int main() {
           cout<<" Podaj h: "; cin>>h;
       }
 
-      if(trapez==2){  
+      if(trapez==2){
          //trapez__dane__obwodu
-         cout<<" Podaj a: "; cin>>a;
-         cout<<" Podaj b: "; cin>>b;
-         cout<<" Podaj c: "; cin>>c;
-         cout<<" Podaj d: "; cin>>d;
-       }
+        cout<<" Podaj a: "; cin>>a;
+        cout<<" Podaj b: "; cin>>b;
+        cout<<" Podaj c: "; cin>>c;
+        cout<<" Podaj d: "; cin>>d;
+      }
 
       //trapez__switch-case
       switch(trapez){
@@ -123,10 +122,9 @@ int main() {
             cout<<" >> Blad! Podane wymiary trapezu nie moga byc rowne ZERU!";
           }
           else{
-             cout<<" >> Obwod wynosi: "<<a+b+c+d<<endl;
-              cout<<" >> Ze wzoru: "<<"Ob=a+b+c+d="<<a<<"+"<<b<<"+"<<c<<"+"<<d<<"="<<a+b+c+d;
+            cout<<" >> Obwod wynosi: "<<a+b+c+d<<endl;
+            cout<<" >> Ze wzoru: "<<"Ob=a+b+c+d="<<a<<"+"<<b<<"+"<<c<<"+"<<d<<"="<<a+b+c+d;
           }
-         
           break;
         }
 
@@ -139,7 +137,7 @@ int main() {
 
       break;
     }
-    //END-OF-TRAPEZ    
+    //END-OF-TRAPEZ
 
     //3)TROJKAT
     case 3:{
@@ -162,9 +160,8 @@ int main() {
           //trojkat__dane__obwod
           cout<<" Podaj a:  "; cin>>a;
           cout<<" Podaj b:  "; cin>>b;
-          cout<<" Podaj c:  "; cin>>c; 
+          cout<<" Podaj c:  "; cin>>c;
       }
-  
       //trojkat__switch-case
       switch(trojkat){
           case 1:{
@@ -174,7 +171,7 @@ int main() {
             else{
               cout<<" >> Pole wynosi: "<<(a*h)/2<<endl;
               cout<<" >> Ze wzoru: "<<"P=(a*h)/2="<<"("<<a<<"*"<<h<<")/2="<<(a*h)/2;
-            } 
+            }
             break;
           }
 
