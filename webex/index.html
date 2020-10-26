@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cisco Webex - Linki</title>
-    <link rel="stylesheet" href="../app/main.css">
+
     <link rel="icon" href="../app/img/basic-logo-zsoit.png">
 
 
@@ -21,26 +21,37 @@
 
     <style>
         body {
-            background-image: url(../app/img/white-background-logo-zsoit.png);
-        }
-        
-        .cisco {
             white-space: normal !important;
             word-wrap: break-word;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         
-        .cisco__person {
-            margin: 3px;
-        }
-        
-        .cisco__link {
+        a,
+        a:visited {
+            text-decoration: none;
             color: red;
         }
         
-        .cisco__link:hover {
+        a:hover {
             color: white;
             background-color: #E2AD38;
-            padding: 2px;
+        }
+        
+        .cisco {
+            display: block;
+            background-color: #fff;
+        }
+        
+        .cisco__person {
+            margin: 20px;
+        }
+        
+        .logo {
+            background-color: black;
+        }
+        
+        h1 {
+            color: white;
         }
     </style>
 
@@ -50,51 +61,40 @@
 
 <body>
 
+    <div class="logo">
+        <h1> <img src="../app/img/basic-logo-zsoit.png" style="float: left; padding: 4px; " width="35px "> <span style="color: #E2AD38; "> webex</span> zsoit <span style="font-family: 'Caveat', cursive; font-weight: lighter; color:#ffa3a3 ; ">2020</span></h1>
+    </div>
 
 
-    <fieldset>
+    <div class="cisco">
+        <div class="cisco__person"> <b>Łukasz Kwaśniewski</b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/lkwasniewski " target="_blank">https://zsoitmiastko.webex.com/meet/lkwasniewski </a>
+        </div>
+        <div class="cisco__person"> <b>Tomasz Kwaśniewski</b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/tkwasniewski " target="_blank">https://zsoitmiastko.webex.com/meet/tkwasniewski </a>
+        </div>
+        <div class="cisco__person"><b>Bartosz Formela</b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/bformela " target="_blank">https://zsoitmiastko.webex.com/meet/bformela </a>
+        </div>
+        <div class="cisco__person"><b>Eugeniusz Lisiecki </b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/eugeniuszlisiecki " target="_blank">https://zsoitmiastko.webex.com/meet/eugeniuszlisiecki </a>
+        </div>
+        <div class="cisco__person"> <b>Aleksandra Biernacka</b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/olabierka " target="_blank">https://zsoitmiastko.webex.com/meet/olabierka </a>
+        </div>
+        <div class="cisco__person"> <b>Katarzyna Kowalczyk</b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/kkowalczyk " target="_blank">https://zsoitmiastko.webex.com/meet/kkowalczyk</a>
+        </div>
+        <div class="cisco__person"><b>Agnieszka Lesińska </b> <br>
+            <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/agnieszka.lesinska " target="_blank">https://zsoitmiastko.webex.com/meet/agnieszka.lesinska </a>
+        </div>
 
-        <legend class="logo">
-            <h1> <img src="../app/img/basic-logo-zsoit.png" style="float: left; padding: 4px; " width="30px "> <span style="color: #E2AD38; "> cisco</span>.webex <span style="font-family: 'Caveat', cursive; font-weight: lighter; color:#ffa3a3 ; ">2020</span></h1>
-        </legend>
+    </div>
 
-
-
-
-        <div class="cisco">
-
-            <ul>
-                <li class="cisco__person"> <b>Łukasz Kwaśniewski</b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/lkwasniewski " target="_blank">https://zsoitmiastko.webex.com/meet/lkwasniewski </a>
-                </li>
-                <li class="cisco__person"> <b>Tomasz Kwaśniewski</b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/tkwasniewski " target="_blank">https://zsoitmiastko.webex.com/meet/tkwasniewski </a>
-                </li>
-                <li class="cisco__person"><b>Bartosz Formela</b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/bformela " target="_blank">https://zsoitmiastko.webex.com/meet/bformela </a>
-                </li>
-                <li class="cisco__person"><b>Eugeniusz Lisiecki </b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/eugeniuszlisiecki " target="_blank">https://zsoitmiastko.webex.com/meet/eugeniuszlisiecki </a>
-                </li>
-                <li class="cisco__person"> <b>Aleksandra Biernacka</b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/olabierka " target="_blank">https://zsoitmiastko.webex.com/meet/olabierka </a>
-                </li>
-                <li class="cisco__person"> <b>Katarzyna Kowalczyk</b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/kkowalczyk " target="_blank">https://zsoitmiastko.webex.com/meet/kkowalczyk</a>
-                </li>
-                <li class="cisco__person"><b>Agnieszka Lesińska </b> <br>
-                    <a class="cisco__link" href="https://zsoitmiastko.webex.com/meet/agnieszka.lesinska " target="_blank">https://zsoitmiastko.webex.com/meet/agnieszka.lesinska </a>
-                </li>
-            </ul>
-
-        </div> <br> <br>
+    <center><img src="../app/img/basic-logo-zsoit.png" width="100px"></center>
 
 
 
-
-
-
-    </fieldset>
 
 
 </body>
