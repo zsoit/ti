@@ -4,7 +4,7 @@
 #include <cstdio>
 using namespace std;
 int main() {
- char znak; int razy, i; //zmienna typu char, moze pobrac kazdy pojedynczy znak/cyfre, nie pobiera wiecej niz jeden znak/cyfre;
+ char znak; int razy, i; 
 
   //PETLA-WHILE
   cout<<"Podaj znak: "; cin>>znak;
