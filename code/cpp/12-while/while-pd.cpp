@@ -1,24 +1,28 @@
+//za pomoca petli for i while prosze napisac program ktory bedzie pobieral znka z klawiatury i bedzie wypisal okreslona liczbe razy przez uzytkownika 
 
-//za pomoca for i while prosze napsiac program ktory bedzie pobieral znka z klawiatury i bedzie wypisal okreala liczbe razy przez uzytkowia 
 #include <iostream>
 #include <cstdio>
 using namespace std;
-int main (){
-    string email;
-    int i, razy;
+int main() {
+ char znak; int razy, i; //zmienna char, moze pobrac kazdy pojedynczy znak/cyfre
 
-    cout<<"Podaj swoj email: ";
-    cin>>email;
+  //PETLA-WHILE
+  cout<<"Podaj znak: "; cin>>znak;
+  cout<<"Podaj liczbe powtorzen: "; cin>>razy;
+  i=1;
+  while(i<=razy){
+    cout<<i<<". "<<znak<<endl;
+    i++;
+  }
 
-    cout<<"Podaj liczbe powtorzen: ";
-    cin>>razy;
+  //PETLA-FOR
+  cout<<"Podaj znak: "; cin>>znak;
+  cout<<"Podaj liczbe powtorzen: "; cin>>razy;
+  for(int i=1;i<=razy;i++){
+    cout<<i<<". "<<znak<<endl;
+  }
 
-    i=1;
-    while(i<=razy){
-        cout<<email<<endl;
-        i++;
-    }  
+  cin.ignore();
+  return 0;
 
-    cin.ignore();
-    return 0;
 }
