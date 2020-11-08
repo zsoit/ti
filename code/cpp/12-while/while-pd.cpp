@@ -1,4 +1,4 @@
-//za pomoca petli for i while prosze napisac program ktory bedzie pobieral znaka z klawiatury i bedzie wypisal okreslona liczbe razy przez uzytkownika 
+//za pomoca petli while i for napisz program, ktory bedzie pobieral znak z klawiatury oraz bedzie go wypisywal okreslona liczbe razy przez uzytkownika 
 
 #include <iostream>
 #include <cstdio>
