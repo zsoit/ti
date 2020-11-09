@@ -19,9 +19,6 @@ else{
 }
 cout<<"a/b wynosi "<<k;
 
-
-
-
 cin.ignore();
 return 0;
 
