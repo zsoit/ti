@@ -64,5 +64,6 @@ do
 }
 while (znak != 't' && znak == 'n');
 cout<<"==> Dziekuje, zakoczyles dzialanie programu! J.A.\n";
+getchar();
 return 0;
 } 
