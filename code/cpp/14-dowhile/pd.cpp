@@ -20,7 +20,7 @@ do
             cout<<"===="<<endl;
             for(i=0;i<=razy;i++){
                 cout<<i<<". "<<znak<<endl;
-             }
+            }
             cout<<"===="<<endl;
             break;
         }
@@ -34,7 +34,7 @@ do
             while(i<=razy){
                 cout<<i<<". "<<znak<<endl;
                 i++;
-             }
+            }
             cout<<"===="<<endl;
             break;
         }
@@ -66,4 +66,4 @@ while (znak != 't' && znak == 'n');
 cout<<"==> Dziekuje, zakoczyles dzialanie programu! J.A.\n";
 getchar();
 return 0;
-} 
+}

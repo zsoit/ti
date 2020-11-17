@@ -41,7 +41,7 @@ do
             cout <<"==> wybrales ODEJMOWANIE \n";
             cout<<"Podaj liczbe a: "; cin>>x;
             cout<<"Podaj liczbe b: "; cin>>y;
-            cout<<"Suma wynosi: "<<roznica(x,y)<<endl;
+            cout<<"Roznica wynosi: "<<roznica(x,y)<<endl;
             break;
         }
 
@@ -49,7 +49,7 @@ do
             cout <<"==> wybrales MNOZENIE \n";
             cout<<"Podaj liczbe a: "; cin>>x;
             cout<<"Podaj liczbe b: "; cin>>y;
-            cout<<"Suma wynosi: "<<iloczyn(x,y)<<endl;
+            cout<<"Iloczyn wynosi: "<<iloczyn(x,y)<<endl;
             break;
         }
 
@@ -57,7 +57,7 @@ do
             cout<<"==> wybrales DZIELNIE\n";
             cout<<"Podaj liczbe a: "; cin>>x;
             cout<<"Podaj liczbe b: "; cin>>y;
-            cout<<"Suma wynosi: "<<iloraz(x,y)<<endl;
+            cout<<"Iloraz wynosi: "<<iloraz(x,y)<<endl;
             break;
         }
         default:{

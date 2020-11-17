@@ -1,7 +1,7 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    
     "workbench.colorTheme": "Atom One Dark",
-    "editor.fontSize": 21,
+    "editor.fontSize": 14,
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
     "[html]": {
@@ -9,9 +9,7 @@
     },
     "liveServer.settings.donotShowInfoMsg": true,
     "window.zoomLevel": 0,
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
-    "liveServer.settings.host": "172.18.39.97"
+  
 
     //bar
     "explorer.enableDragAndDrop": false,
@@ -32,7 +30,7 @@
     }
 
     //terminal
-    "terminal.integrated.fontSize": 20;
+    "terminal.integrated.fontSize": 14;
 
     "editor.wordWrap": "on",
 
