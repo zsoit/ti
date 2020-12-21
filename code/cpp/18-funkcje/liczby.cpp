@@ -14,7 +14,7 @@ float delta(float a, float b, float c){
 void dwa(float A,float B, float delta){
     float x1=(-B-sqrt(delta))/(2*A);
     float x2=(-B+sqrt(delta))/(2*A);
-    cout<<"Rownianie posiada dwa rozniwazania!! \n";
+    cout<<"Rownianie posiada dwa rozwiazania!! \n";
     cout<<"x2="<<x2<<"  x2="<<x1;
 }
 
@@ -25,7 +25,7 @@ float jedno(float a, float b){
 int main()
 {
     float a,b ,c,x1,x2;
-    cout<<"Rozwiazanie rowniania ax^2+bx+c=0 "<<endl;
+    cout<<"Rozwiazanie rownania ax^2+bx+c=0 "<<endl;
     cout<<"Podaj a: "; cin>>a;
     cout<<"Podaj b: "; cin>>b;
     cout<<"Podaj c: "; cin>>c;
