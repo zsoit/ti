@@ -15,7 +15,7 @@ int main(){
         }
 
         if(i==2){
-            cout<<"   "<<znak<<znak<<endl;
+            cout<<"   "<<znak<<""<<znak<<endl;
         }
 
         if(i==3){ 
